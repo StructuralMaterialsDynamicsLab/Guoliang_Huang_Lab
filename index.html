@@ -20,6 +20,8 @@
 
     <link rel="Bookmark" href="./favicon.ico" />
 
+<script type="module"> import swiper from https://cdn.jsdelivr.net/npm/swiper@11.1.11/+esm </script>
+
     <!--可以在收藏夹中显示出你的图标-->
 
     <script type="text/javascript" src="./js/jquery-1.8.0.min.js"></script>
@@ -31,6 +33,9 @@
     <link rel="stylesheet" type="text/css" href="./scroll-swiper/swiper.min.css" />
 
     <link rel="stylesheet" type="text/css" href="./scroll-swiper/swiper-pagination.css" />
+	
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 
     <style>
 
@@ -214,7 +219,7 @@
 
                             <div class="swiper-slide">
 
-                                <a href="#"><img src="images/swiper2.png" style="width: auto;height: auto;border: 0px;"/></a>
+                                <a href="#"><img src="images/swiper2.png" style="width: 100%;height: 100%;border: 0px;"/></a>
 
                             </div>
 
@@ -222,7 +227,7 @@
 
                             <div class="swiper-slide">
 
-                                <a href="#"><img src="images/swiper3.png"></a>
+                                <a href="#"><img src="images/swiper3.png" style="width: 100%;height: 100%;border: 0px;"/></a>
 
                             </div>
 
@@ -230,20 +235,64 @@
 
                             <div class="swiper-slide">
 
-                                <a href="#"><img src="images/swiper4.png"></a>
+                                <a href="#"><img src="images/swiper4.png" style="width: 100%;height: 100%;border: 0px;"/></a>
 
                             </div>
+							<div class="swiper-slide">
 
+                                <a href="#"><img src="images/swiper5.png" style="width: 100%;height: 100%;border: 0px;"/></a>
+
+                            </div>
+							<div class="swiper-slide">
+
+                                <a href="#"><img src="images/swiper6.png" style="width: 100%;height: 100%;border: 0px;"/></a>
+
+                            </div>
+							<div class="swiper-slide">
+
+                                <a href="#"><img src="images/swiper7.png" style="width: 100%;height: 100%;border: 0px;"/></a>
+
+                            </div>
+							<div class="swiper-slide">
+
+                                <a href="#"><img src="images/swiper8.png" style="width: 100%;height: 100%;border: 0px;"/></a>
+
+                            </div>
+							<div class="swiper-slide">
+
+                                <a href="#"><img src="images/swiper10.png" style="width: 100%;height: 100%;border: 0px;"/></a>
+
+                            </div>
+							<div class="swiper-slide">
+
+                                <a href="#"><img src="images/swiper11.png" style="width: 100%;height: 100%;border: 0px;"/></a>
+
+                            </div>
                         </div>
 
                         <div class="swiper-pagination"></div>
+						<!-- Add Navigation -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 
                     </div>
 
-                    <script src="./scroll-swiper/swiper.min.js"></script>
-
-                    <script src="./scroll-swiper/swiper-left.js"></script>
-
+                        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+						<!-- Initialize Swiper -->
+						<script>
+							var swiper = new Swiper('.swiper-container', {
+								loop: true,
+								pagination: {
+									el: '.swiper-pagination',
+									clickable: true,
+								},
+								navigation: {
+									nextEl: '.swiper-button-next',
+									prevEl: '.swiper-button-prev',
+								},
+							});
+						</script>
+					
                 </div>
 
 
@@ -2111,7 +2160,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/photo_synthetic_pumping.jpg" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news1.png" /></td>
 
                                 <td width="380" ><h3>Mizzou Engineering team discovers method to control sound waves in the fourth dimension</h3> 
 
@@ -2135,7 +2184,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/PRL_IMAGE.png" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news2.png" /></td>
 
                                 <td width="380" ><h3>New publication on Physical Review Letters</h3> 
 
@@ -2158,7 +2207,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/amerimech3.jpg" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news3.png" /></td>
 
                                 <td width="380" ><h3>Mizzou Engineering hosts prestigious AmeriMech Symposium</h3> 
 
@@ -2183,7 +2232,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/prresearch-thumbnail.png" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news4.png" /></td>
 
                                 <td width="380" ><h3>New publication on Physical Review Applied</h3> 
 
@@ -2207,11 +2256,9 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/header.png" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news3.png" /></td>
+								<td width="380" ><h3>Welcome to the AmeriMech Symposium; Nonreciprocal and Topological Wave Phenomena in Solids and Fluids  </h3> 
 
-                                <td width="380" ><h3> <a href="http://cmdl.missouri.edu/AmeriMech2019.html" > <span style="color:blue;font-weight:bold"> Welcome to the AmeriMech Symposium&#58; Non&#8209;reciprocal and Topological Wave Phenomena in Solids and Fluids  <br>
-
-								May 29-31, 2019 at University of Missouri-Columbia </a></h3> 
 
                                 <p style="text-align: left;color: grey">
 
@@ -2236,7 +2283,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/prsa.jpg" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news5.png" /></td>
 
                                 <td width="380" ><h3>New publication on Proc. R. Soc. A</h3> 
 
@@ -2262,7 +2309,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/jsv.gif" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news6.png" /></td>
 
                                 <td width="380" ><h3>New publication on JSV</h3> 
 
@@ -2286,7 +2333,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/prl.gif" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news2.png" /></td>
 
                                 <td width="380" ><h3>Collaborative publication on PRL</h3> 
 
@@ -2308,7 +2355,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/sms.gif" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news7.png" /></td>
 
                                 <td width="380" ><h3>New publication on SMS</h3> 
 
@@ -2330,7 +2377,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/jsv.gif" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news6.png" /></td>
 
                                 <td width="380" ><h3>New publication on JSV</h3> 
 
@@ -2352,7 +2399,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/PRB.jpg" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news8.png" /></td>
 
                                 <td width="380" ><h3>New publication on PRB</h3> 
 
@@ -2374,7 +2421,7 @@
 
                             <tr>
 
-                                <td><img class="newslistfig" src="members/Dr Ma.jpeg" /></td>
+                                <td><img class="newslistfig" src="images/news_white.png" /></td>
 
                                 <td><h3>Welcome Dr. Ma</h3> 
 
@@ -2396,7 +2443,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/dean_s_visit_v2.jpg" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news_white.png" /></td>
 
                                 <td width="380" ><h3>MU Deans Tour</h3> 
 
@@ -2420,7 +2467,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/jmps.gif" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news9.png" /></td>
 
                                 <td width="380" ><h3>New publication on JMPS</h3> 
 
@@ -2442,7 +2489,7 @@
 
                             <tr>
 
-                                <td><img class="newslistfig" src="news/sms.gif" /></td>
+                                <td><img class="newslistfig" src="images/news7.png" /></td>
 
                                 <td><h3>New publication on SMS</h3> 
 
@@ -2466,7 +2513,7 @@
 
                             <tr>
 
-                                <td><img class="newslistfig" src="news/sms.gif" /></td>
+                                <td><img class="newslistfig" src="images/news7.png" /></td>
 
                                 <td><h3>New publication on SMS</h3> 
 
@@ -2490,7 +2537,7 @@
 
                             <tr>
 
-                                <td><img class="newslistfig" src="news/jima.png" /></td>
+                                <td><img class="newslistfig" src="images/news10.png" /></td>
 
                                 <td><h3>New publication on JIMSS</h3> 
 
@@ -2514,7 +2561,7 @@
 
                             <tr>
 
-                                <td><img class="newslistfig" src="news/PRB.jpg" /></td>
+                                <td><img class="newslistfig" src="images/news8.png" /></td>
 
                                 <td><h3>New publication on PRB</h3> 
 
@@ -2538,7 +2585,7 @@
 
                             <tr>
 
-                                <td><img class="newslistfig" src="news/YangyangChen_2017.jpg" /></td>
+                                <td><img class="newslistfig" src="images/news11.png" /></td>
 
                                 <td><h3>Yangyang Chen defense</h3> 
 
@@ -2560,7 +2607,7 @@
 
                             <tr>
 
-                                <td width="90"><img class = "newslistfig" src="news/tour1.jpg" /></td>
+                                <td width="90"><img class = "newslistfig" src="images/news12.png" /></td>
 
                                 <td width="380" ><h3>President Choi Visit and Tour </h3> 
 
@@ -2948,57 +2995,7 @@
 
     <!-- Copyright-->
 
-    <div align="center">
 
-        <p>
-
-            <h3>Copyright &#169; <a href="./index.htmL">Structured Materials and Dynamics Lab</a> at <a href="http://www.pku.edu.cn/">PKU</a>. </h3>
-
-            <h4>Webmaster: Xiaopeng Li</h4>
-
-        </p>
-
-
-
-        <!-- Start of StatCounter Code for Dreamweaver -->
-
-        <script type="text/javascript">
-
-			var sc_project = 11059304;
-
-			var sc_invisible = 0;
-
-			var sc_security = "e0057e6a";
-
-			var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
-
-			document.write("<sc" + "ript type='text/javascript' src='" + scJsHost + "statcounter.com/counter/counter.js'></" + "script>");
-
-        </script>
-
-        <noscript>
-
-            <div class="statcounter">
-
-                <a title="web analytics"
-
-                href="http://statcounter.com/" target="_blank"><img
-
-                class="statcounter"
-
-                src="//c.statcounter.com/11059304/0/e0057e6a/0/" alt="web
-
-                analytics"></a>
-
-            </div>
-
-        </noscript>
-
-        <!-- End of StatCounter Code for Dreamweaver -->
-
-        <h3></h3>
-
-    </div>
 
 
 
